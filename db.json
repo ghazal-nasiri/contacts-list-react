@@ -1,0 +1,12 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Ghazal",
+      "email": "ghazal@gmail.com",
+      "mobile": "9999",
+      "job": "",
+      "company": ""
+    }
+  ]
+}

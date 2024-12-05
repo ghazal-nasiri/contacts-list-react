@@ -1,0 +1,114 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+.container .actions {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+
+.container .actions button {
+  background-color: transparent;
+  border: none;
+  color: green;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .actions button.deleteBtn{
+  color: rgb(255, 68, 68);
+  margin-right: 20px;
+}
+
+.container .actions button.disable{
+  opacity: 0.5;
+  pointer-events: none;
+  
+}
+
+.container .actions button:hover {
+  transform: scale(1.1);
+}
+
+.container .actions .addUserBtn {
+  transition: 0.3s;
+}
+
+.container .actions .addUserBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Search Box */
+
+.searchBox {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+  box-shadow: green 1.95px 1.95px;
+}
+
+.searchBox input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.searchBox input::placeholder {
+  color: #a8a8a8;
+}
+
+/* Contacts List */
+.contactsList {
+  margin-top: 30px;
+}
+
+.contactsList li {
+  display: flex;
+  gap: 5px;
+  border-bottom: 1px solid #fff;
+  transition: 0.3s;
+}
+
+.contactsList li:hover {
+  border-color: green;
+}
+
+.contactsList li input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: green;
+}
+
+.contactsList li a {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactsList li a .email {
+  opacity: 0.6;
+  font-size: 16px;
+  display: none;
+}
+
+
+
+
+@media screen and (min-width: 578px) {
+  .contactsList li a .email {
+    display: inline;
+  }
+}
